@@ -1,0 +1,80 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.add-email-view {
+    width: 40%;
+    border-right: 1px solid #000;
+    padding: 1rem;
+}
+
+.search-email-view {
+    width: 60%;
+    padding: 1rem;
+}
+
+.email-label {
+    display: block;
+}
+
+.email-list {
+    display: grid;
+}
+
+.email-headers {
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    width: 74%;
+}
+
+.email-header {
+    display: inline-block;
+    font-weight: bold;
+    width: 40%;
+}
+
+.is-enabled-header {
+    width: 12%;
+}
+
+.delete-header {
+    width: 20%;
+}
+
+.emails {
+    width: 50%;
+}
+
+.email-row section {
+    display: inline-block;
+}
+
+.email-row .email-checkbox {
+    width: 17%;
+}
+
+.email-row .email-value {
+    width: 60%;
+}
+
+.email-row .email-delete {
+    width: 20%;
+}

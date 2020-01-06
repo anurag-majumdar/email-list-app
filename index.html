@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Email List </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="main">
+        <section class="add-email-view">
+            <section class="add-email">
+                <label class="email-label" for="emailId">Email Address</label>
+                <input type="email" class="txt-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="emailID" />
+            </section>
+
+            <button class="btn-add-email"> Add </button>
+        </section>
+
+        <section class="search-email-view">
+            <section class="email-search">
+                <label for="search"> Search </label>
+                <input type="search" id="search" />
+                <button class="btn-search"> Go </button>
+            </section>
+
+            <section class="show-enabled">
+                <input type="checkbox" id="show-enabled-mails" />
+                <label for="show-enabled-mails"> Show Only Enabled </label>
+            </section>
+
+            <section class="email-list-view">
+
+                <section class="email-headers">
+                    <section class="email-header is-enabled-header"> IsEnabled </section>
+                    <section class="email-header"> Email </section>
+                    <section class="email-header delete-header"> Delete </section>
+                </section>
+
+                <section class="emails">
+                </section>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="./src/app.js"></script>
+    <script src="./src/add-email.js"></script>
+    <script src="./src/search-email.js"></script>
+</body>
+
+</html>
